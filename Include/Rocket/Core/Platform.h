@@ -58,7 +58,7 @@
 #endif
 
 
-#if defined(ROCKET_PLATFORM_WIN32) && !(defined(__MINGW32__) || defined(__MINGW64__))
+#if defined(ROCKET_PLATFORM_WIN32) && !defined(__MINGW32__)
 	// alignment of a member was sensitive to packing
 	#pragma warning(disable : 4121)
 
