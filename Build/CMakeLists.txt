@@ -148,9 +148,11 @@ foreach(library ${LIBRARIES})
     )
     
     if(APPLE)
-    	set_target_properties(${NAME} PROPERTIES
-    					OSX_ARCHITECTURES "i386;x86_64;"
-    	)
+	if(NOT IOS)
+    		set_target_properties(${NAME} PROPERTIES
+    						OSX_ARCHITECTURES "i386;x86_64;"
+    		)
+	end(NOT IOS)
     endif()
 
     install(TARGETS ${NAME}
