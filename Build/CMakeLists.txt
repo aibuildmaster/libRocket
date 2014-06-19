@@ -152,8 +152,8 @@ foreach(library ${LIBRARIES})
     		set_target_properties(${NAME} PROPERTIES
     						OSX_ARCHITECTURES "i386;x86_64;"
     		)
-	end(NOT IOS)
-    endif()
+	endif(NOT IOS)
+    endif(APPLE)
 
     install(TARGETS ${NAME}
             LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
