@@ -1,4 +1,4 @@
-Testing a minor change #4
+Testing a minor change #5
 
 Download FreeType. Get the Binaries package:
 	http://gnuwin32.sourceforge.net/packages/freetype.htm
